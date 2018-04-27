@@ -57,11 +57,11 @@ templates_path = ['_templates']
 # source_suffix = '.rst'
 
 # The master toctree document.
-master_doc = 'toc'
+master_doc = 'index'
 
 # General information about the project.
-project = 'Carpentries Users Guide'
-copyright = '2017, Authors'
+project = 'Carpentries Handbook'
+copyright = '2018, The Carpentries. This content is released under the terms of the Creative Commons Attribution License'
 author = 'Authors'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -125,6 +125,11 @@ html_theme_options = {
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+html_favicon = "img/logo.ico"
+
+html_logo = 'img/logo.png'
+
+html_show_sourcelink = False
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
 #
@@ -136,6 +141,17 @@ html_sidebars = {
         'searchbox.html',
     ]
 }
+
+
+html_context = {
+  'display_github': True,
+  'github_user': 'carpentries',
+  'github_repo': 'handbook',
+  'github_version': 'master/',
+  'theme_vcs_pageview_mode': 'blob'
+}
+
+
 
 
 # -- Options for HTMLHelp output ------------------------------------------
